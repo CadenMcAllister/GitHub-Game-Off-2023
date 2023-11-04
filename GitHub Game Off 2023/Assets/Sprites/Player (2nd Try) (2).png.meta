@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f309a2a34b918eb4d9d0da1b292dcbd1
+guid: cec38a7b91dcca641b5e50a19d71214d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -44,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
@@ -141,22 +141,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Idle
+      name: Player_Left
       rect:
         serializedVersion: 2
-        x: 0
-        y: 42
+        x: 16
+        y: 27
         width: 32
-        height: 22
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d009a6b596c7d760800000000000000
-      internalID: 7482667652216324306
+      spriteID: a6735925db34f3544a03c437e4eb9c97
+      internalID: 1706731461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Center
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 27
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00961b37a3f4f0e42b2e0ab04f7b513d
+      internalID: 207531956
       vertices: []
       indices: 
       edges: []
@@ -165,10 +186,10 @@ TextureImporter:
       name: Player_Right
       rect:
         serializedVersion: 2
-        x: 32
-        y: 41
-        width: 29
-        height: 20
+        x: 144
+        y: 27
+        width: 32
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,29 +197,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7264602424c694b4a97a616ff9d70f0c
-      internalID: 201164268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_Left
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 8
-        width: 34
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da7f2dd3e9c10954aa8e9e4120580fd7
-      internalID: 1188153935
+      spriteID: 67bd14b5584002b469222d78ff7ae065
+      internalID: -1840364694
       vertices: []
       indices: 
       edges: []
@@ -218,9 +218,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player_Idle: 7482667652216324306
-      Player_Left: 1188153935
-      Player_Right: 201164268
+      Player_Center: 207531956
+      Player_Left: 1706731461
+      Player_Right: -1840364694
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

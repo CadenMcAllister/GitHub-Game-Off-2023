@@ -15,8 +15,8 @@ namespace TarodevController
         [Header("Settings")] [SerializeField, Range(1f, 3f)]
         private float _maxIdleSpeed = 2;
 
-        [SerializeField] private float _maxTilt = 5;
-        [SerializeField] private float _tiltSpeed = 20;
+        [SerializeField] private float _maxTilt = 1.5f;
+        [SerializeField] private float _tiltSpeed = 5f;
 
         [Header("Particles")] [SerializeField] private ParticleSystem _jumpParticles;
         [SerializeField] private ParticleSystem _launchParticles;
@@ -25,7 +25,7 @@ namespace TarodevController
 
         [Header("Audio Clips")] [SerializeField]
         private AudioClip[] _footsteps;
-
+        public Sprite[] spritelist;
         private AudioSource _source;
         private IPlayerController _player;
         private bool _grounded;
@@ -55,21 +55,25 @@ namespace TarodevController
 
         private void Update()
         {
+            if (Input.GetKeyDown(KeyCode.A)){
+            _sprite.sprite = spritelist[1];
+        }
+
+            if (Input.GetKeyDown(KeyCode.D)){
+            _sprite.sprite = spritelist[2];
+        }
+
+            if (!Input.anyKey){
+                _sprite.sprite = spritelist[0];
+            }
             if (_player == null) return;
 
             DetectGroundColor();
 
-            HandleSpriteFlip();
-
             HandleIdleSpeed();
 
-            HandleCharacterTilt();
         }
 
-        private void HandleSpriteFlip()
-        {
-            if (_player.FrameInput.x != 0) _sprite.flipX = _player.FrameInput.x < 0;
-        }
 
         private void HandleIdleSpeed()
         {
