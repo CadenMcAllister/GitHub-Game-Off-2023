@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &58873001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 58873002}
+  m_Layer: 6
+  m_Name: BulletSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &58873002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58873001}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.812, y: -0.039, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1755341246}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &286159950
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,6 +838,7 @@ GameObject:
   - component: {fileID: 1755341246}
   - component: {fileID: 1755341247}
   - component: {fileID: 1755341248}
+  - component: {fileID: 1755341249}
   m_Layer: 6
   m_Name: Resizer_2X
   m_TagString: Untagged
@@ -827,6 +859,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2143418322}
+  - {fileID: 58873002}
   m_Father: {fileID: 2040510200}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -897,6 +930,21 @@ MonoBehaviour:
   spriteTransform: {fileID: 1755341246}
   playerTransform: {fileID: 0}
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &1755341249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755341245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b6fed2bddfed14488a6173a7f3266a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 1560439089617658125, guid: 794a3f5403e77a744a7f88d5d88115fc, type: 3}
+  bulletSpawnPoint: {fileID: 58873002}
+  projectileForce: 25
 --- !u!1 &2040510199
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,13 +988,14 @@ GameObject:
   - component: {fileID: 2143418322}
   - component: {fileID: 2143418321}
   - component: {fileID: 2143418320}
+  - component: {fileID: 2143418323}
   m_Layer: 0
-  m_Name: Resize
+  m_Name: Resize_Effects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &2143418320
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -5741,3 +5790,15 @@ Transform:
   m_Father: {fileID: 1755341246}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: -90}
+--- !u!114 &2143418323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143418319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d73d5b59d04b16b4ab680bfb98270c01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
