@@ -453,6 +453,7 @@ GameObject:
   - component: {fileID: 576527711}
   - component: {fileID: 576527710}
   - component: {fileID: 576527714}
+  - component: {fileID: 576527715}
   m_Layer: 0
   m_Name: Object
   m_TagString: Untagged
@@ -578,6 +579,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Highlight: {fileID: 286159950}
+--- !u!114 &576527715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576527709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830ece6fdb2d75049ab803b8e8b2731e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsScaleable: 1
+  IsScaled: 0
+  weapon: {fileID: 0}
+  ResizerRay: {fileID: 1755341245}
 --- !u!1 &582016346 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1544650614272011804, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
@@ -847,6 +864,7 @@ MonoBehaviour:
   firePoint: {fileID: 58873002}
   bulletPrefab: {fileID: 1560439089617658125, guid: 794a3f5403e77a744a7f88d5d88115fc, type: 3}
   lineRenderer: {fileID: 1717479594}
+  currentGun: {fileID: 1755341245}
 --- !u!1 &1717479593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,7 +1018,7 @@ GameObject:
   - component: {fileID: 1755341248}
   m_Layer: 6
   m_Name: Resizer_2X
-  m_TagString: Untagged
+  m_TagString: 2x
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
