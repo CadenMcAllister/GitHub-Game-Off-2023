@@ -595,11 +595,6 @@ MonoBehaviour:
   IsScaled: 0
   weapon: {fileID: 0}
   ResizerRay: {fileID: 1755341245}
---- !u!1 &582016346 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1544650614272011804, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
-  m_PrefabInstance: {fileID: 841351086}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &841351086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -849,22 +844,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1544650614272011795, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
   m_PrefabInstance: {fileID: 841351086}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1510786882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 582016346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5d22f08a10b24a4e8409c78798d4899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firePoint: {fileID: 58873002}
-  bulletPrefab: {fileID: 1560439089617658125, guid: 794a3f5403e77a744a7f88d5d88115fc, type: 3}
-  lineRenderer: {fileID: 1717479594}
-  currentGun: {fileID: 1755341245}
 --- !u!1 &1717479593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1016,6 +995,7 @@ GameObject:
   - component: {fileID: 1755341246}
   - component: {fileID: 1755341247}
   - component: {fileID: 1755341248}
+  - component: {fileID: 1755341249}
   m_Layer: 6
   m_Name: Resizer_2X
   m_TagString: 2x
@@ -1106,6 +1086,22 @@ MonoBehaviour:
   spriteTransform: {fileID: 1755341246}
   playerTransform: {fileID: 0}
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &1755341249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755341245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5d22f08a10b24a4e8409c78798d4899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 58873002}
+  bulletPrefab: {fileID: 1560439089617658125, guid: 794a3f5403e77a744a7f88d5d88115fc, type: 3}
+  lineRenderer: {fileID: 1717479594}
+  currentGun: {fileID: 0}
 --- !u!1 &2040510199
 GameObject:
   m_ObjectHideFlags: 0

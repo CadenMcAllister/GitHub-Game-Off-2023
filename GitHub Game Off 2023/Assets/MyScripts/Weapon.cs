@@ -9,7 +9,8 @@ public class Weapon : MonoBehaviour
     public LineRenderer lineRenderer;
     public GameObject currentGun;
 
-    // Update is called once per frame
+    void Start() => currentGun = gameObject;
+
     void Update()
     {
         if (Input.GetButtonDown("Fire1")){

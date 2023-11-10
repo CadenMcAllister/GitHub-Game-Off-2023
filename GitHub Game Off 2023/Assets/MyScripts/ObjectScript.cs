@@ -18,8 +18,12 @@ public class ObjectScript : MonoBehaviour
         Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time);
 
         if (IsScaleable){
-            if (weapon.currentGun.tag == "2x"){
+            GameObject currentGun = weapon.currentGun;
+            if (currentGun.tag == "2x"){
+                if (!IsScaled){
                 transform.localScale = new Vector3(transform.localScale.x * 2f, transform.localScale.y * 2f, transform.localScale.z);
+                IsScaled = true;
+                }
             }
         }
     }    
