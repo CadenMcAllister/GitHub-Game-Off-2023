@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 81a4b8b579f40974796c1393e161d996
+guid: 5fe6ff0fe6c794448a4cffef581911be
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -141,7 +141,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Resizer Gun
+      name: RayGun_2X
       rect:
         serializedVersion: 2
         x: 2
@@ -149,35 +149,77 @@ TextureImporter:
         width: 26
         height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 706efe2dd271da4418709f52ca4f2141
-      internalID: -1130089761
+      spriteID: 6a04ee826442ad045abafb0ace591134
+      internalID: 491414949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ray
+      name: RayGun_1X
       rect:
         serializedVersion: 2
-        x: 0
-        y: 12
-        width: 32
-        height: 5
+        x: 34
+        y: 36
+        width: 26
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f32ffbb6bc749ae42830501e55dec444
-      internalID: 514159239
+      spriteID: a98dc7d9ac597e140b2066e23789e424
+      internalID: -885874533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayGun_Half
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 36
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc97af24118a76740a40dc2aa770ba87
+      internalID: -1080051505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayGun_5X
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 36
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c39a068f8b3b84fa719ce6e70084e6
+      internalID: 23932329
       vertices: []
       indices: 
       edges: []
@@ -197,8 +239,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ray: 514159239
-      Resizer Gun: -1130089761
+      RayGun_1X: -885874533
+      RayGun_2X: 491414949
+      RayGun_5X: 23932329
+      RayGun_Half: -1080051505
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -7,10 +7,6 @@ public class Weapon : MonoBehaviour
     public Transform firePoint;
 	public GameObject bulletPrefab;
     public LineRenderer lineRenderer;
-    public GameObject currentGun;
-
-    void Start() => currentGun = gameObject;
-
     void Update()
     {
         if (Input.GetButtonDown("Fire1")){

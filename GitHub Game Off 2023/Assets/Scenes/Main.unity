@@ -1060,7 +1060,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1130089761, guid: 81a4b8b579f40974796c1393e161d996, type: 3}
+  m_Sprite: {fileID: 23932329, guid: 5fe6ff0fe6c794448a4cffef581911be, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1101,7 +1101,6 @@ MonoBehaviour:
   firePoint: {fileID: 58873002}
   bulletPrefab: {fileID: 1560439089617658125, guid: 794a3f5403e77a744a7f88d5d88115fc, type: 3}
   lineRenderer: {fileID: 1717479594}
-  currentGun: {fileID: 0}
 --- !u!1 &2040510199
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,6 +1110,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2040510200}
+  - component: {fileID: 2040510201}
   m_Layer: 6
   m_Name: Weapon Holder
   m_TagString: Untagged
@@ -1134,3 +1134,20 @@ Transform:
   m_Father: {fileID: 1510786878}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2040510201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040510199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c4fe93eb87fa1d4dba15ccf656006f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons:
+  - {fileID: -885874533, guid: 5fe6ff0fe6c794448a4cffef581911be, type: 3}
+  - {fileID: 491414949, guid: 5fe6ff0fe6c794448a4cffef581911be, type: 3}
+  - {fileID: 23932329, guid: 5fe6ff0fe6c794448a4cffef581911be, type: 3}
+  - {fileID: -1080051505, guid: 5fe6ff0fe6c794448a4cffef581911be, type: 3}
