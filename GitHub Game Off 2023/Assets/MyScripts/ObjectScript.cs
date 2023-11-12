@@ -25,6 +25,7 @@ public class ObjectScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
+        if (col.CompareTag("PlayerProjectile")){
         Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time);
 
         if (IsScaleable){
@@ -38,6 +39,7 @@ public class ObjectScript : MonoBehaviour
                 transform.localScale = originalScale;
                 IsScaled = false;
             }
+        }
         }
     }    
 }
