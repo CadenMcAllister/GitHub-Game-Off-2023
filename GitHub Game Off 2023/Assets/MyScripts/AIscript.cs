@@ -55,7 +55,7 @@ public class AIscript : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision){
-        if (collision.gameObject.tag == "Projectile"){
+        if (collision.gameObject.tag == "Player"){
         collisionCounter += 1;
         }
     }
